@@ -1,1 +1,6 @@
-AddType text/vcard .vcf
+<FilesMatch "\.(vcf|vcard)$">
+    # Zwingt den Browser, den "Öffnen in..." Dialog zu zeigen
+    ForceType text/vcard
+    Header set Content-Disposition "attachment; filename=Christoph_Franke.vcf"
+    Header set Content-Type "text/x-vcard; charset=utf-8"
+</FilesMatch>
