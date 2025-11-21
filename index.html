@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt speichern | Ihr Name</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .card {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 350px;
+            width: 90%;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+        h1 { margin: 0 0 5px 0; font-size: 22px; }
+        p { margin: 0 0 25px 0; color: #666; font-size: 16px; }
+        .btn {
+            display: block;
+            background-color: #007AFF; /* Hier Ihre Firmenfarbe einsetzen */
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(0,122,255,0.3);
+            transition: transform 0.2s;
+        }
+        .btn:active { transform: scale(0.98); }
+        .footer { margin-top: 30px; font-size: 12px; color: #999; }
+        .footer a { color: #999; text-decoration: none; margin: 0 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="photo.jpg" alt="Profilbild" class="profile-img">
+        
+        <h1>Vorname Nachname</h1>
+        <p>Geschäftsführer @ Ihre Firma</p>
+        
+        <a href="kontakt.vcf" class="btn">Kontakt speichern</a>
+        
+        <div class="footer">
+            <a href="https://www.ihre-domain.de" target="_blank">Website</a> • 
+            <a href="https://linkedin.com/in/ihrprofil" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+</body>
+</html>
